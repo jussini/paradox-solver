@@ -1,13 +1,13 @@
 package net.ankkatalo.paradox;
 
 import java.util.ArrayList;
-//import net.ankkatalo.paradox.Slot;
+import java.util.List;
 
 public class ClockSolver {
 
-	public static ArrayList<SolutionItem> solution = new ArrayList<SolutionItem> ();
+	public static List<SolutionItem> solution = new ArrayList<SolutionItem> ();
 
-	public static boolean solve(ArrayList<Slot> slots, int index, int depth) {
+	public static boolean solve(List<Slot> slots, int index, int depth) {
 		// if this slot has already been checked
 		Slot slot = slots.get(index);
 		if (!slot.available()) {
@@ -27,7 +27,7 @@ public class ClockSolver {
 		if (ip >= slots.size()) {
 			ip = ip - slots.size();
 		}
-		ArrayList<Slot> cloneSlots = cloneList(slots);
+		List<Slot> cloneSlots = cloneList(slots);
 		cloneSlots.get(index).setAvailable(false);
 		if (solve(cloneSlots, ip, depth + 1)) {
 			solution.add(0, new SolutionItem(index, slots.get(index).value()));
@@ -52,8 +52,8 @@ public class ClockSolver {
 		
 	}
 	
-	public static ArrayList<Slot> cloneList(ArrayList<Slot> list) {
-		ArrayList<Slot> clone = new ArrayList<Slot>(list.size());
+	public static List<Slot> cloneList(List<Slot> list) {
+		List<Slot> clone = new ArrayList<Slot>(list.size());
 		for (Slot slot: list) clone.add(new Slot(slot));
 		return clone;		
 	}
