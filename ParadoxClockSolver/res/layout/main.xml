@@ -1,139 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-  android:id="@+id/textview"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  android:text="@string/hello"/> -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical" >
+<!-- <TextView xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/textview" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	android:text="@string/hello"/> -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/editText1"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:text="TextView" />
+	<TextView android:id="@+id/editText1" android:layout_width="wrap_content"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:text="TextView" />
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+	<ScrollView android:id="@+id/scrollView1"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1">
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal" >
-            
-            <EditText
-                android:id="@+id/slot1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/slot2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
 
-            <EditText
-                android:id="@+id/slot3"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
+				<TextView android:id="@+id/textView1" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot1_prompt" />
 
-            <EditText
-                android:id="@+id/slot4"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
-                
-             </LinearLayout>
-            
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal" >
-            
-                            <EditText
-                                android:id="@+id/slot5"
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:inputType="number" />
+				<Spinner android:id="@+id/spinner1" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot1_prompt" />
 
-            <EditText
-                android:id="@+id/slot6"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/slot7"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/slot8"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
-                
-             </LinearLayout>
-             
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal" >
-
-            <EditText
-                android:id="@+id/slot9"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/slot10"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/slot11"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/slot12"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="number" />
-                
-             </LinearLayout>
-            
-            
+			</LinearLayout>
 
 
-        </LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView2" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot2_prompt" />
+
+				<Spinner android:id="@+id/spinner2" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot2_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView3" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot3_prompt" />
+
+				<Spinner android:id="@+id/spinner3" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot3_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView4" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot4_prompt" />
+
+				<Spinner android:id="@+id/spinner4" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot4_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView5" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot5_prompt" />
+
+				<Spinner android:id="@+id/spinner5" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot5_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView6" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot6_prompt" />
+
+				<Spinner android:id="@+id/spinner6" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot6_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView7" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot7_prompt" />
+
+				<Spinner android:id="@+id/spinner7" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot7_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView8" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot8_prompt" />
+
+				<Spinner android:id="@+id/spinner8" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot8_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView9" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot9_prompt" />
+
+				<Spinner android:id="@+id/spinner9" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot9_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView10" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot10_prompt" />
+
+				<Spinner android:id="@+id/spinner10" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot10_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView11" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot11_prompt" />
+
+				<Spinner android:id="@+id/spinner11" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot11_prompt" />
+
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_weight="1">
+
+				<TextView android:id="@+id/textView12" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:text="@string/slot12_prompt" />
+
+				<Spinner android:id="@+id/spinner12" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:prompt="@string/slot12_prompt" />
+
+			</LinearLayout>
+
+		</LinearLayout>
 
 
-    </LinearLayout>
+
+	</ScrollView>
+
+
+
+
+</LinearLayout>

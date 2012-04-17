@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Oh, Hai, Clock Solver</string>
-    <string name="app_name">Clock Solver</string>
+	<string name="hello">Oh, Hai, Clock Solver</string>
+	<string name="app_name">Clock Solver</string>
+
+	<string name="slot1_prompt">Slot 1</string>
+	<string name="slot2_prompt">Slot 2</string>
+	<string name="slot3_prompt">Slot 3</string>
+	<string name="slot4_prompt">Slot 4</string>
+	<string name="slot5_prompt">Slot 5</string>
+	<string name="slot6_prompt">Slot 6</string>
+	<string name="slot7_prompt">Slot 7</string>
+	<string name="slot8_prompt">Slot 8</string>
+	<string name="slot9_prompt">Slot 9</string>
+	<string name="slot10_prompt">Slot 10</string>
+	<string name="slot11_prompt">Slot 11</string>
+	<string name="slot12_prompt">Slot 12</string>
+
+	<string-array name="slot_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+	</string-array>
 
 </resources>
